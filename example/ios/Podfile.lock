@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - install_plugin_custom (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - install_plugin_custom (from `.symlinks/plugins/install_plugin_custom/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  install_plugin_custom:
+    :path: ".symlinks/plugins/install_plugin_custom/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  install_plugin_custom: cf04211b6d2f57b1d77a8eaf5c0c4073744f4028
+
+PODFILE CHECKSUM: 3dbe063e9c90a5d7c9e4e76e70a821b9e2c1d271
+
+COCOAPODS: 1.9.0.beta.2
