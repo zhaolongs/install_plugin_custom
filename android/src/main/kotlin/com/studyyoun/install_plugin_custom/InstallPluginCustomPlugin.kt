@@ -128,7 +128,7 @@ class InstallPluginCustomPlugin(private val registrar: Registrar) : MethodCallHa
     val intent = Intent(Intent.ACTION_VIEW)
     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
     intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
-    val uri: Uri = FileProvider.getUriForFile(context, "$appId.fileProvider.install", file)
+    val uri: Uri = FileProvider.getUriForFile(context, "$appId.fileprovider", file)
     intent.setDataAndType(uri, "application/vnd.android.package-archive")
     context.startActivity(intent)
   }

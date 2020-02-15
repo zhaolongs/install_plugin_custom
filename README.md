@@ -1,4 +1,5 @@
 # install_plugin_custom
+<<<<<<< HEAD
 
 A new Flutter plugin.
 
@@ -12,3 +13,6 @@ Android and/or iOS.
 For help getting started with Flutter, view our 
 [online documentation](https://flutter.dev/docs), which offers tutorials, 
 samples, guidance on mobile development, and a full API reference.
+=======
+flutter app 升级调起安装结构
+>>>>>>> b501f7e10d63edf28aa7cd4610a47ee2191e4bdf
