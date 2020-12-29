@@ -17,7 +17,6 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
-
   }
 
   @override
@@ -28,10 +27,35 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: Center(
-          child:FlatButton(child: Text("打开appstore"),onPressed: (){
-            InstallPluginCustom.gotoAppStore(
-                "https://apps.apple.com/cn/app/id1472328992");
-          },),
+          child: Column(
+            children: <Widget>[
+              FlatButton(
+                  child: Text("打开appstore"),
+                  onPressed: () {
+                    InstallPluginCustom.gotoAppStore(
+                        "https://apps.apple.com/cn/app/id1472328992");
+                  }),
+              FlatButton(
+                  child: Text("点击安装"),
+                  onPressed: () {
+                    InstallPluginCustom.gotoAppStore(
+                        "https://apps.apple.com/cn/app/id1472328992");
+                  }),
+              FlatButton(
+                  child: Text("Android 点击安装"),
+                  onPressed: () {
+                    InstallPluginCustom.installApk(
+                            "/storage/emulated/0/Android/data/com.learn.coalx/filesrk.apk",
+                            'com.learn.coalx')
+                        .then((result) {
+                      print('install apk $result');
+                    }).catchError((error) {
+                      print('install apk $error');
+                      //安装失败
+                    });
+                  }),
+            ],
+          ),
         ),
       ),
     );
