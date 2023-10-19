@@ -123,7 +123,7 @@ class InstallPluginCustomPlugin() : MethodCallHandler, FlutterPlugin, ActivityAw
     }
 
     override fun onDetachedFromEngine(binding: FlutterPlugin.FlutterPluginBinding) {
-        TODO("Not yet implemented")
+        Log.d(TAG, "onDetachedFromEngine() called with: binding = $binding")
     }
 
     override fun onAttachedToActivity(binding: ActivityPluginBinding) {
@@ -152,7 +152,7 @@ class InstallPluginCustomPlugin() : MethodCallHandler, FlutterPlugin, ActivityAw
     override fun onDetachedFromActivity() {
         Log.d(TAG, "onDetachedFromActivity() called")
     }
-    
+
     companion object{
         private const val TAG = "InstallPluginCustomPlug"
     }
